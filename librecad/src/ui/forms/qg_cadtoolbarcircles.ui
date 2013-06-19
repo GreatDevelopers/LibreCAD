@@ -528,6 +528,7 @@ p, li { white-space: pre-wrap; }
   <tabstop>bCircle2P</tabstop>
   <tabstop>bCircle3P</tabstop>
   <tabstop>bCircleParallel</tabstop>
+  <tabstop>bFlower</tabstop>
  </tabstops>
  <resources>
   <include location="../../../res/extui/extui.qrc"/>
@@ -686,6 +687,22 @@ p, li { white-space: pre-wrap; }
     <hint type="sourcelabel">
      <x>48</x>
      <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bFlower</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_CadToolBarCircles</receiver>
+   <slot>drawFlower()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>0</x>
+     <y>190</y>
     </hint>
     <hint type="destinationlabel">
      <x>32</x>
