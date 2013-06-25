@@ -77,6 +77,7 @@ void QG_CadToolBarCircles::setCadToolBar(QG_CadToolBar* tb) {
     cadToolBar = tb;
     if (tb!=NULL) {
         actionHandler = tb->getActionHandler();
+          connect(bFlower,SIGNAL(clicked()),this,SLOT(drawFlower()));
     } else {
         RS_DEBUG->print(RS_Debug::D_ERROR,
                         "QG_CadToolBarCircles::setCadToolBar(): No valid toolbar set.");

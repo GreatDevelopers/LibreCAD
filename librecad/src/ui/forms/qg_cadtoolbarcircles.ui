@@ -495,9 +495,9 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>190</y>
-     <width>31</width>
-     <height>31</height>
+     <y>186</y>
+     <width>32</width>
+     <height>32</height>
     </rect>
    </property>
    <property name="maximumSize">
@@ -511,6 +511,16 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>F</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../../../res/extui/extui.qrc">
+     <normaloff>:/extui/flower-spaceholder.png</normaloff>:/extui/flower-spaceholder.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
    </property>
    <property name="checkable">
     <bool>true</bool>

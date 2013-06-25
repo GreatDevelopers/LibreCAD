@@ -51,7 +51,7 @@ QAction* RS_ActionDrawFlower::createGUIAction(RS2::ActionType /*type*/, QObject*
                                   QKeySequence(), NULL); */
         // "Circle: Center, Point"
     QAction* action = new QAction(tr("Flower"), NULL);
-        action->setIcon(QIcon(":/extui/flower.png"));
+        action->setIcon(QIcon(":/extui/flower-spaceholder.png"));
     //action->zetStatusTip(tr("Draw circles with center and point"));
     return action;
 }
