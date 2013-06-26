@@ -56,6 +56,10 @@ public slots:
     virtual void drawCircleTan2();
     virtual void drawCircleTan3();
     virtual void drawFlower();
+    virtual void drawCardiod();
+    virtual void drawEpicycloid();
+    virtual void drawHypocycloid();
+    virtual void drawNephroid();
     virtual void back();
     virtual void resetToolBar();
     virtual void showCadToolBar(RS2::ActionType actionType);

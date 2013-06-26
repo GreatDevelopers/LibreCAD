@@ -309,6 +309,7 @@ HEADERS += actions/rs_actionblocksadd.h \
     actions/rs_actiondrawarc.h \
     actions/rs_actiondrawarc3p.h \
     actions/rs_actiondrawarctangential.h \
+    actions/rs_actiondrawcardiod.h \
     actions/rs_actiondrawcircle.h \
     actions/rs_actiondrawcircle2p.h \
     actions/rs_actiondrawcircle3p.h \
@@ -324,7 +325,9 @@ HEADERS += actions/rs_actionblocksadd.h \
     actions/rs_actiondrawellipse4points.h \
     actions/rs_actiondrawellipsecenter3points.h \
     actions/rs_actiondrawellipseinscribe.h \
+    actions/rs_actiondrawepicycloid.h \
     actions/rs_actiondrawhatch.h \
+    actions/rs_actiondrawhypocycloid.h \
     actions/rs_actiondrawimage.h \
     actions/rs_actiondrawline.h \
     actions/rs_actiondrawlineangle.h \
@@ -345,6 +348,7 @@ HEADERS += actions/rs_actionblocksadd.h \
     actions/rs_actiondrawpolyline.h \
     actions/rs_actiondrawspline.h \
     actions/rs_actiondrawtext.h \
+    actions/rs_actiondrawnephroid.h \
     actions/rs_actioneditcopy.h \
     actions/rs_actioneditpaste.h \
     actions/rs_actioneditundo.h \
@@ -442,6 +446,7 @@ SOURCES += actions/rs_actionblocksadd.cpp \
     actions/rs_actiondrawarc.cpp \
     actions/rs_actiondrawarc3p.cpp \
     actions/rs_actiondrawarctangential.cpp \
+    actions/rs_actiondrawcardiod.cpp \
     actions/rs_actiondrawcircle.cpp \
     actions/rs_actiondrawcircle2p.cpp \
     actions/rs_actiondrawcircle3p.cpp \
@@ -457,7 +462,9 @@ SOURCES += actions/rs_actionblocksadd.cpp \
     actions/rs_actiondrawellipse4points.cpp \
     actions/rs_actiondrawellipsecenter3points.cpp \
     actions/rs_actiondrawellipseinscribe.cpp \
+    actions/rs_actiondrawepicycloid.cpp \
     actions/rs_actiondrawhatch.cpp \
+    actions/rs_actiondrawhypocycloid.cpp \
     actions/rs_actiondrawimage.cpp \
     actions/rs_actiondrawline.cpp \
     actions/rs_actiondrawlineangle.cpp \
@@ -473,6 +480,7 @@ SOURCES += actions/rs_actionblocksadd.cpp \
     actions/rs_actiondrawlinerelangle.cpp \
     actions/rs_actiondrawlinetangent1.cpp \
     actions/rs_actiondrawlinetangent2.cpp \
+    actions/rs_actiondrawnephroid.cpp \
     actions/rs_actiondrawmtext.cpp \
     actions/rs_actiondrawpoint.cpp \
     actions/rs_actiondrawpolyline.cpp \

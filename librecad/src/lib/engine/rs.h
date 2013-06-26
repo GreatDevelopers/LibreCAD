@@ -257,7 +257,11 @@ public:
         ActionDrawCircleTan2,
         ActionDrawCircleTan3,
         ActionDrawFlower,
-
+        ActionDrawCardiod,
+        ActionDrawEpicycloid,
+        ActionDrawHypocycloid,
+        ActionDrawNephroid, 
+          
         ActionDrawEllipseArcAxis,
         ActionDrawEllipseAxis,
         ActionDrawEllipseFociPoint,

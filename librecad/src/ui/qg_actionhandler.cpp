@@ -59,6 +59,10 @@
 #include "rs_actiondrawcircletan2.h"
 #include "rs_actiondrawcircletan3.h"
 #include "rs_actiondrawflower.h"
+#include "rs_actiondrawcardiod.h"
+#include "rs_actiondrawepicycloid.h"
+#include "rs_actiondrawhypocycloid.h"
+#include "rs_actiondrawnephroid.h"
 #include "rs_actiondrawellipseaxis.h"
 #include "rs_actiondrawellipsefocipoint.h"
 #include "rs_actiondrawellipse4points.h"
@@ -519,6 +523,21 @@ RS_ActionInterface* QG_ActionHandler::setCurrentAction(RS2::ActionType id) {
         break;
     case RS2::ActionDrawFlower:
         a = new RS_ActionDrawFlower(*doc, *gv);
+        break;
+    case RS2::ActionDrawCardiod:
+        a = new RS_ActionDrawCardiod(*doc, *gv);
+        break;
+
+    case RS2::ActionDrawEpicycloid:
+        a = new RS_ActionDrawEpicycloid(*doc, *gv);
+        break;
+
+    case RS2::ActionDrawHypocycloid:
+        a = new RS_ActionDrawHypocycloid(*doc, *gv);
+        break;
+
+    case RS2::ActionDrawNephroid:
+        a = new RS_ActionDrawNephroid(*doc, *gv);
         break;
     case RS2::ActionDrawArc:
         a = new RS_ActionDrawArc(*doc, *gv);
@@ -1395,6 +1414,21 @@ void QG_ActionHandler::slotDrawCircleTan3() {
 }
 void QG_ActionHandler::slotDrawFlower() {
     setCurrentAction(RS2::ActionDrawFlower);
+}
+void QG_ActionHandler::slotDrawCardiod() {
+    setCurrentAction(RS2::ActionDrawCardiod);
+}
+
+void QG_ActionHandler::slotDrawEpicycloid() {
+    setCurrentAction(RS2::ActionDrawEpicycloid);
+}
+
+void QG_ActionHandler::slotDrawHypocycloid() {
+    setCurrentAction(RS2::ActionDrawHypocycloid);
+}
+
+void QG_ActionHandler::slotDrawNephroid() {
+    setCurrentAction(RS2::ActionDrawNephroid);
 }
 void QG_ActionHandler::slotDrawArc() {
     setCurrentAction(RS2::ActionDrawArc);

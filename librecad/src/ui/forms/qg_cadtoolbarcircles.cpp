@@ -143,6 +143,28 @@ void QG_CadToolBarCircles::drawFlower() {
         actionHandler->slotDrawFlower();
     }
 }
+void QG_CadToolBarCircles::drawCardiod() {
+    if (cadToolBar!=NULL && actionHandler!=NULL) {
+        actionHandler->slotDrawCardiod();
+    }
+}
+void QG_CadToolBarCircles::drawEpicycloid() {
+    if (cadToolBar!=NULL && actionHandler!=NULL) {
+        actionHandler->slotDrawEpicycloid();
+    }
+}
+void QG_CadToolBarCircles::drawHypocycloid() {
+    if (cadToolBar!=NULL && actionHandler!=NULL) {
+        actionHandler->slotDrawHypocycloid();
+    }
+}
+
+void QG_CadToolBarCircles::drawNephroid() {
+    if (cadToolBar!=NULL && actionHandler!=NULL) {
+        actionHandler->slotDrawNephroid();
+    }
+}
+
 void QG_CadToolBarCircles::back() {
     if (cadToolBar!=NULL) {
         cadToolBar->back();
@@ -196,6 +218,25 @@ void QG_CadToolBarCircles::restoreAction()
         actionHandler->slotDrawFlower();
         return;
     }
+    if ( bCardiod ->isChecked() ) {
+        actionHandler->slotDrawCardiod();
+        return;
+    }
+
+    if ( bEpicycloid ->isChecked() ) {
+        actionHandler->slotDrawEpicycloid();
+        return;
+    }
+
+    if ( bHypocycloid ->isChecked() ) {
+        actionHandler->slotDrawHypocycloid();
+        return;
+    }
+
+    if ( bNephroid ->isChecked() ) {
+        actionHandler->slotDrawNephroid();
+        return;
+    }
     //clear all action
     bHidden->setChecked(true);
     RS_ActionInterface* currentAction =actionHandler->getCurrentAction();
@@ -246,6 +287,18 @@ void QG_CadToolBarCircles::showCadToolBar(RS2::ActionType actionType){
         return;
     case RS2::ActionDrawFlower:
         bFlower->setChecked(true);
+        return;
+    case RS2::ActionDrawCardiod:
+        bCardiod->setChecked(true);
+        return;
+    case RS2::ActionDrawEpicycloid:
+        bEpicycloid->setChecked(true);
+        return;
+    case RS2::ActionDrawHypocycloid:
+        bHypocycloid ->setChecked(true);
+        return;
+    case RS2::ActionDrawNephroid:
+        bNephroid->setChecked(true);
         return;
     default:
         bHidden->setChecked(true);

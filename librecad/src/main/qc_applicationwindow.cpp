@@ -1045,9 +1045,7 @@ void QC_ApplicationWindow::initActions(void)
     action = actionFactory.createAction(RS2::ActionDrawCircleTan1_2P, actionHandler);
     subMenu->addAction(action);
     connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
-    action = actionFactory.createAction(RS2::ActionDrawFlower, actionHandler);
-    subMenu->addAction(action);
-    connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
+    
     // Ellipses:
     subMenu= menu->addMenu(tr("&Ellipse"));
     subMenu->setObjectName("Ellipse");
@@ -1145,6 +1143,30 @@ void QC_ApplicationWindow::initActions(void)
     menu->addAction(action);
     connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
 
+    //-----NEW FEATURES-----
+        subMenu= menu->addMenu(tr("&New Features"));
+        subMenu->setObjectName("New");
+    //Flower
+    action = actionFactory.createAction(RS2::ActionDrawFlower, actionHandler);
+    subMenu->addAction(action);
+    connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
+    //Cardiod
+    action = actionFactory.createAction(RS2::ActionDrawCardiod, actionHandler);
+    subMenu->addAction(action);
+    connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
+    //Epicycloid
+    action = actionFactory.createAction(RS2::ActionDrawEpicycloid, actionHandler);
+    subMenu->addAction(action);
+    connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
+    //Hypocycloid
+    action = actionFactory.createAction(RS2::ActionDrawHypocycloid, actionHandler);
+    subMenu->addAction(action);
+    connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
+    //Nephroid
+    action = actionFactory.createAction(RS2::ActionDrawNephroid, actionHandler);
+    subMenu->addAction(action);
+    connect(this, SIGNAL(windowsChanged(bool)), action, SLOT(setEnabled(bool)));
+    
     // Dimensioning actions:
     //
 #ifdef __APPLE1__

@@ -384,8 +384,8 @@ p, li { white-space: pre-wrap; }
     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans Serif'; font-size:9pt;&quot;&gt;Draw a tangential Circle of three lines/arcs/circles&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans Serif';&quot;&gt;Draw a tangential Circle of three circles&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="text">
     <string/>
@@ -495,9 +495,9 @@ p, li { white-space: pre-wrap; }
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>190</y>
+     <y>220</y>
      <width>31</width>
-     <height>31</height>
+     <height>25</height>
     </rect>
    </property>
    <property name="maximumSize">
@@ -519,6 +519,152 @@ p, li { white-space: pre-wrap; }
     <bool>true</bool>
    </property>
   </widget>
+  <widget class="QToolButton" name="bCardiod">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>31</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Draw Cardiod</string>
+   </property>
+   <property name="text">
+    <string>C</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="bEpicycloid">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>250</y>
+     <width>31</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>E</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="bHypocycloid">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>31</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Draw Hypocycloid</string>
+   </property>
+   <property name="text">
+    <string>H</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="bNephroid">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>31</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolTip">
+    <string>Draw Nephroid</string>
+   </property>
+   <property name="text">
+    <string>N</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>66</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>NEW</string>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
@@ -528,7 +674,11 @@ p, li { white-space: pre-wrap; }
   <tabstop>bCircle2P</tabstop>
   <tabstop>bCircle3P</tabstop>
   <tabstop>bCircleParallel</tabstop>
-  <tabstop>bFlower</tabstop>
+  <tabstop>bflower</tabstop>
+  <tabstop>bCardiod</tabstop>
+  <tabstop>bEpicycloid</tabstop>
+  <tabstop>bHypocycloid</tabstop>
+ <tabstop>bNephroid</tabstop>
  </tabstops>
  <resources>
   <include location="../../../res/extui/extui.qrc"/>
@@ -693,8 +843,8 @@ p, li { white-space: pre-wrap; }
      <y>167</y>
     </hint>
    </hints>
-  </connection>
-  <connection>
+   </connection>
+   <connection>
    <sender>bFlower</sender>
    <signal>clicked()</signal>
    <receiver>QG_CadToolBarCircles</receiver>
@@ -702,11 +852,75 @@ p, li { white-space: pre-wrap; }
    <hints>
     <hint type="sourcelabel">
      <x>0</x>
-     <y>190</y>
+     <y>220</y>
     </hint>
     <hint type="destinationlabel">
-     <x>32</x>
-     <y>167</y>
+     <x>31</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bCardiod</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_CadToolBarCircles</receiver>
+   <slot>drawCardiod()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bEpicycloid</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_CadToolBarCircles</receiver>
+   <slot>drawEpicycloid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>0</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bHypocycloid</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_CadToolBarCircles</receiver>
+   <slot>drawHypocycloid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bNephroid</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_CadToolBarCircles</receiver>
+   <slot>drawNephroid()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>0</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>25</y>
     </hint>
    </hints>
   </connection>

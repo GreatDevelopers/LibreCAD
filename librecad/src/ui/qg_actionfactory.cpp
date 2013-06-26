@@ -50,6 +50,10 @@
 #include "rs_actiondrawarctangential.h"
 #include "rs_actiondrawcircle.h"
 #include "rs_actiondrawflower.h"
+#include "rs_actiondrawcardiod.h"
+#include "rs_actiondrawepicycloid.h"
+#include "rs_actiondrawhypocycloid.h"
+#include "rs_actiondrawnephroid.h"
 #include "rs_actiondrawcircle2p.h"
 #include "rs_actiondrawcircle3p.h"
 #include "rs_actiondrawcirclecr.h"
@@ -667,6 +671,30 @@ QAction* QG_ActionFactory::createAction(	RS2::ActionType id, QObject* obj,
         connect(action, SIGNAL(triggered()),
                 obj, SLOT(slotDrawFlower()));
         break;
+    case RS2::ActionDrawCardiod:
+                action = RS_ActionDrawCardiod::createGUIAction(id, mw);
+        connect(action, SIGNAL(triggered()),
+                obj, SLOT(slotDrawCardiod()));
+        break;
+
+    case RS2::ActionDrawEpicycloid:
+                action = RS_ActionDrawEpicycloid::createGUIAction(id, mw);
+        connect(action, SIGNAL(triggered()),
+                obj, SLOT(slotDrawEpicycloid()));
+        break;
+
+    case RS2::ActionDrawHypocycloid:
+                action = RS_ActionDrawHypocycloid::createGUIAction(id, mw);
+        connect(action, SIGNAL(triggered()),
+                obj, SLOT(slotDrawHypocycloid()));
+        break;
+
+    case RS2::ActionDrawNephroid:
+                action = RS_ActionDrawNephroid::createGUIAction(id, mw);
+        connect(action, SIGNAL(triggered()),
+                obj, SLOT(slotDrawNephroid()));
+        break;
+
     case RS2::ActionDrawCircleCR:
                 action = RS_ActionDrawCircleCR::createGUIAction(id, mw);
                 /*

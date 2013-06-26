@@ -516,6 +516,10 @@ void QG_CadToolBar::showCadToolBar(RS2::ActionType actionType, bool cleanup){
     case RS2::ActionDrawCircleTan2_1P:
     case RS2::ActionDrawCircleTan1_2P:
     case RS2::ActionDrawFlower:
+    case RS2::ActionDrawCardiod:
+    case RS2::ActionDrawEpicycloid:
+    case RS2::ActionDrawHypocycloid:
+    case RS2::ActionDrawNephroid:
         showToolBar(RS2::ToolBarCircles, false);
        if(tbCircles != NULL){
            tbCircles->showCadToolBar(actionType);
