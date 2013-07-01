@@ -84,6 +84,7 @@
 #include "rs_actiondrawlinetangent2.h"
 #include "rs_actiondrawlineorthtan.h"
 #include "rs_actiondrawpoint.h"
+#include "rs_actiondrawroom.h"
 #include "rs_actiondrawspline.h"
 #include "rs_actiondrawtext.h"
 #include "rs_actiondrawmtext.h"
@@ -693,6 +694,12 @@ QAction* QG_ActionFactory::createAction(	RS2::ActionType id, QObject* obj,
                 action = RS_ActionDrawNephroid::createGUIAction(id, mw);
         connect(action, SIGNAL(triggered()),
                 obj, SLOT(slotDrawNephroid()));
+        break;
+   
+   case RS2::ActionDrawRoom:
+                action = RS_ActionDrawRoom::createGUIAction(id, mw);
+        connect(action, SIGNAL(triggered()),
+                obj, SLOT(slotDrawRoom()));
         break;
 
     case RS2::ActionDrawCircleCR:

@@ -346,6 +346,7 @@ HEADERS += actions/rs_actionblocksadd.h \
     actions/rs_actiondrawmtext.h \
     actions/rs_actiondrawpoint.h \
     actions/rs_actiondrawpolyline.h \
+    actions/rs_actiondrawroom.h \
     actions/rs_actiondrawspline.h \
     actions/rs_actiondrawtext.h \
     actions/rs_actiondrawnephroid.h \
@@ -483,6 +484,7 @@ SOURCES += actions/rs_actionblocksadd.cpp \
     actions/rs_actiondrawnephroid.cpp \
     actions/rs_actiondrawmtext.cpp \
     actions/rs_actiondrawpoint.cpp \
+    actions/rs_actiondrawroom.cpp \
     actions/rs_actiondrawpolyline.cpp \
     actions/rs_actiondrawspline.cpp \
     actions/rs_actiondrawtext.cpp \

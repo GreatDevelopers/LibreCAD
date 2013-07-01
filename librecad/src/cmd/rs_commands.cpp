@@ -86,21 +86,26 @@ RS_Commands::RS_Commands() {
     cmdTranslation.insert("crd", tr("crd"));
     shortCommands.insert(tr("crd"), RS2::ActionDrawCardiod);
 
-    cmdTranslation.insert("Epicycloid", tr("Epicycloid"));
-    mainCommands.insert(tr("Epicycloid"), RS2::ActionDrawEpicycloid);
+    cmdTranslation.insert("epicycloid", tr("epicycloid"));
+    mainCommands.insert(tr("epicycloid"), RS2::ActionDrawEpicycloid);
     cmdTranslation.insert("epi", tr("epi"));
     shortCommands.insert(tr("epi"), RS2::ActionDrawEpicycloid);
 
-    cmdTranslation.insert("Hypocycloid", tr("Hypocycloid"));
-    mainCommands.insert(tr("Hypocycloid"), RS2::ActionDrawHypocycloid);
+    cmdTranslation.insert("hypocycloid", tr("hypocycloid"));
+    mainCommands.insert(tr("hypocycloid"), RS2::ActionDrawHypocycloid);
     cmdTranslation.insert("hypo", tr("hypo"));
     shortCommands.insert(tr("hypo"), RS2::ActionDrawHypocycloid);
+    
+    cmdTranslation.insert("room", tr("room"));
+    mainCommands.insert(tr("room"), RS2::ActionDrawHypocycloid);
+    shortCommands.insert(tr("room"), RS2::ActionDrawHypocycloid);
 
-    cmdTranslation.insert("Nephroid", tr("Nephroid"));
-    mainCommands.insert(tr("Nephroid"), RS2::ActionDrawNephroid);
-    cmdTranslation.insert("Nephro", tr("Nephro"));
-    shortCommands.insert(tr("Nephro"), RS2::ActionDrawNephroid);
-    shortCommands.insert(tr("Neph"), RS2::ActionDrawNephroid);
+
+    cmdTranslation.insert("nephroid", tr("nephroid"));
+    mainCommands.insert(tr("nephroid"), RS2::ActionDrawNephroid);
+    cmdTranslation.insert("nephro", tr("nephro"));
+    shortCommands.insert(tr("nephro"), RS2::ActionDrawNephroid);
+    shortCommands.insert(tr("neph"), RS2::ActionDrawNephroid);
 
     cmdTranslation.insert("rectangle", tr("rectangle"));
     mainCommands.insert(tr("rectangle"), RS2::ActionDrawLineRectangle);

@@ -86,6 +86,7 @@
 #include "rs_actiondrawlinetangent2.h"
 #include "rs_actiondrawmtext.h"
 #include "rs_actiondrawpoint.h"
+#include "rs_actiondrawroom.h"
 #include "rs_actiondrawspline.h"
 #include "rs_actiondrawtext.h"
 #include "rs_actioneditcopy.h"
@@ -148,7 +149,6 @@
 #include "rs_actionzoomprevious.h"
 #include "rs_actionzoomredraw.h"
 #include "rs_actionzoomwindow.h"
-
 #include "rs_actiondrawpolyline.h"
 #include "rs_actionpolylineadd.h"
 #include "rs_actionpolylineappend.h"
@@ -159,7 +159,6 @@
 #include "rs_actionpolylinesegment.h"
 #include "rs_selection.h"
 #include "rs_actionorder.h"
-
 #include "qg_mainwindowinterface.h"
 #include "qg_snaptoolbar.h"
 
@@ -527,7 +526,9 @@ RS_ActionInterface* QG_ActionHandler::setCurrentAction(RS2::ActionType id) {
     case RS2::ActionDrawCardiod:
         a = new RS_ActionDrawCardiod(*doc, *gv);
         break;
-
+    case RS2::ActionDrawRoom:
+        a = new RS_ActionDrawRoom(*doc, *gv);
+        break;
     case RS2::ActionDrawEpicycloid:
         a = new RS_ActionDrawEpicycloid(*doc, *gv);
         break;
@@ -1429,6 +1430,9 @@ void QG_ActionHandler::slotDrawHypocycloid() {
 
 void QG_ActionHandler::slotDrawNephroid() {
     setCurrentAction(RS2::ActionDrawNephroid);
+}
+void QG_ActionHandler::slotDrawRoom() {
+    setCurrentAction(RS2::ActionDrawRoom);
 }
 void QG_ActionHandler::slotDrawArc() {
     setCurrentAction(RS2::ActionDrawArc);

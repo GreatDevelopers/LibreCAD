@@ -60,6 +60,7 @@ public slots:
     virtual void drawEpicycloid();
     virtual void drawHypocycloid();
     virtual void drawNephroid();
+    virtual void drawRoom();
     virtual void back();
     virtual void resetToolBar();
     virtual void showCadToolBar(RS2::ActionType actionType);

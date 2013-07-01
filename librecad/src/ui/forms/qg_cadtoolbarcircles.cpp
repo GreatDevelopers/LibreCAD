@@ -164,7 +164,11 @@ void QG_CadToolBarCircles::drawNephroid() {
         actionHandler->slotDrawNephroid();
     }
 }
-
+void QG_CadToolBarCircles::drawRoom() {
+    if (cadToolBar!=NULL && actionHandler!=NULL) {
+        actionHandler->slotDrawRoom();
+    }
+}
 void QG_CadToolBarCircles::back() {
     if (cadToolBar!=NULL) {
         cadToolBar->back();
@@ -237,6 +241,11 @@ void QG_CadToolBarCircles::restoreAction()
         actionHandler->slotDrawNephroid();
         return;
     }
+    
+    if ( bRoom ->isChecked() ) {
+        actionHandler->slotDrawRoom();
+        return;
+    }
     //clear all action
     bHidden->setChecked(true);
     RS_ActionInterface* currentAction =actionHandler->getCurrentAction();
@@ -300,6 +309,10 @@ void QG_CadToolBarCircles::showCadToolBar(RS2::ActionType actionType){
     case RS2::ActionDrawNephroid:
         bNephroid->setChecked(true);
         return;
+    case RS2::ActionDrawRoom:
+        bRoom->setChecked(true);
+        return;
+        
     default:
         bHidden->setChecked(true);
         return;

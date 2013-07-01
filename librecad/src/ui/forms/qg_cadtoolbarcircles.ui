@@ -665,6 +665,31 @@ p, li { white-space: pre-wrap; }
     <string>NEW</string>
    </property>
   </widget>
+  <widget class="QToolButton" name="bRoom">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>280</y>
+     <width>31</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>R</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>true</bool>
+   </property>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <tabstops>
@@ -674,11 +699,11 @@ p, li { white-space: pre-wrap; }
   <tabstop>bCircle2P</tabstop>
   <tabstop>bCircle3P</tabstop>
   <tabstop>bCircleParallel</tabstop>
-  <tabstop>bflower</tabstop>
   <tabstop>bCardiod</tabstop>
   <tabstop>bEpicycloid</tabstop>
   <tabstop>bHypocycloid</tabstop>
- <tabstop>bNephroid</tabstop>
+  <tabstop>bNephroid</tabstop>
+  <tabstop>bRoom</tabstop>
  </tabstops>
  <resources>
   <include location="../../../res/extui/extui.qrc"/>
@@ -843,8 +868,8 @@ p, li { white-space: pre-wrap; }
      <y>167</y>
     </hint>
    </hints>
-   </connection>
-   <connection>
+  </connection>
+  <connection>
    <sender>bFlower</sender>
    <signal>clicked()</signal>
    <receiver>QG_CadToolBarCircles</receiver>
@@ -916,6 +941,22 @@ p, li { white-space: pre-wrap; }
    <hints>
     <hint type="sourcelabel">
      <x>0</x>
+     <y>280</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bRoom</sender>
+   <signal>clicked()</signal>
+   <receiver>QG_CadToolBarCircles</receiver>
+   <slot>drawRoom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>30</x>
      <y>280</y>
     </hint>
     <hint type="destinationlabel">

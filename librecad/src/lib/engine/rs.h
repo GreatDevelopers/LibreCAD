@@ -261,6 +261,7 @@ public:
         ActionDrawEpicycloid,
         ActionDrawHypocycloid,
         ActionDrawNephroid, 
+        ActionDrawRoom,
           
         ActionDrawEllipseArcAxis,
         ActionDrawEllipseAxis,
